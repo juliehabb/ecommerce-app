@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { HeaderContainer, Nav, Logo,  NavLinks, CartIcon, SearchBar } from "./header/header.styles.js";
 
-export default App;
+const Header = () => {
+    return (
+        <HeaderContainer>
+            <Logo>
+                <img src="" ></img>
+            </Logo>
+            <SearchBar placeholder="Search products..." />
+            <Nav>
+                <NavLinks>
+                    <a href="/" >Home</a>
+                    <a href="/" >Shop</a>
+                    <a href="/contact" >Contact</a>
+                </NavLinks>
+                <CartIcon>
+                    <span>Cart (0)</span> {/* Cart count */}
+                </CartIcon>
+            </Nav>
+        </HeaderContainer>
+    );
+};
+
+export default Header;
