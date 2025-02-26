@@ -3,7 +3,7 @@ import {
     HeaderContainer, Nav, Logo, NavLinks, CartIcon, SearchBar, 
     HeroSection, HeroOverlay, HeroContent, HeroButton, 
     ProductCard, ProductTitle, ProductRating, ProductPrice, AddToCartButton, Footer 
-} from "./header/header.styles.js";
+} from "./components/header/header.styles.js";
 
 const products = [
   { id: 1, title: "Survival Knife", rating: 4.5, price: "$49.99" },
