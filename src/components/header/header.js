@@ -5,9 +5,11 @@ import { HeaderContainer, Nav, Logo, NavLinks, CartIcon, SearchBar } from "../he
 const Header = () => {
   return (
     <HeaderContainer>
-      <Logo>
-        <img src="https://via.placeholder.com/100x50" alt="Logo" />
-      </Logo>
+      <Link to="/">  {}
+        <Logo>
+          <img src="/logo.png" alt="Logo" />
+        </Logo>
+      </Link>
       <Nav>
         <NavLinks>
           <Link to="/">Home</Link>
