@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-   position: absolute;
+   position: fixed;
    top: 0;
    left: 0;
    width: 100%;
-   padding: 20px 40px;
+   height: 70px; 
+   padding: 10px 40px; 
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: transparent;
-   z-index: 10;
+   z-index: 1000;
 `;
 
 export const Logo = styled.div`
@@ -49,6 +49,7 @@ export const SearchBar = styled.input`
    border-radius: 4px;
    border: 1px solid #ccc;
    background-color: white;
+   margin-right: 5rem;
 `;
 
 export const HeroSection = styled.header`
@@ -87,12 +88,33 @@ export const HeroButton = styled.button`
    }
 `;
 
+export const ProductContainer = styled.div`
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 20px;
+   padding: 40px 20px;
+   justify-content: center;
+
+   @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   @media (max-width: 480px) {
+      grid-template-columns: repeat(1, 1fr);
+   }
+`;
+
 export const ProductCard = styled.div`
    background-color: white;
    padding: 20px;
    border-radius: 10px;
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
    text-align: center;
+   border: 1px solid #ddd;
 `;
 
 export const ProductTitle = styled.h3`
@@ -105,6 +127,12 @@ export const ProductRating = styled.div`
    display: flex;
    justify-content: center;
    margin-bottom: 10px;
+   .filled {
+      color: #f0a500;
+   }
+   .empty {
+      color: #ccc;
+   }
 `;
 
 export const ProductPrice = styled.p`
@@ -124,5 +152,4 @@ export const AddToCartButton = styled.button`
       background-color: #0056b3;
    }
 `;
-
 
