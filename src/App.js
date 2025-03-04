@@ -7,8 +7,13 @@ import ProductPage from "./pages/productPage.js";
 import CartPage from "./pages/cartPage.js";
 import CartSuccessPage from "./pages/cartSuccessPage.js";
 import ContactPage from "./pages/contactPage.js";
+import { useFetchProducts } from "./functionality/fetch/fetch.js";
 
 const App = () => {
+    const { products, loading, error } = useFetchProducts(); 
+
+    console.log("Products in App.js:", products); 
+
     return (
         <Router>
             <Header />
@@ -21,7 +26,6 @@ const App = () => {
             </Routes>
             <Footer />
         </Router>
-        
     );
 };
 
