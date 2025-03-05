@@ -8,7 +8,7 @@ export const useFetchProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("https://v2.api.noroff.dev/online-shop");
+        const response = await fetch("https://v2.api.noroff.dev/online-shop?image_size=small");
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
