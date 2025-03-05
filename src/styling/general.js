@@ -166,6 +166,32 @@ export const Accordion = styled.div`
    }
 `;
 
+export const ReviewContainer = styled.div`
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   padding: 15px;
+`;
+
+export const ReviewCard = styled.div`
+   background-color: #f9f9f9;
+   padding: 15px;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+`;
+
+export const ReviewAuthor = styled.h4`
+   font-size: 16px;
+   font-weight: bold;
+   margin-bottom: 5px;
+`;
+
+export const ReviewComment = styled.p`
+   font-size: 14px;
+   color: #555;
+   margin-top: 5px;
+`;
+
 export const ProductCardsSection = styled.div`
    display: flex;
    flex-wrap: wrap;
