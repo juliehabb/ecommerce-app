@@ -7,25 +7,23 @@ import ProductPage from "./pages/productPage.js";
 import CartPage from "./pages/cartPage.js";
 import CartSuccessPage from "./pages/cartSuccessPage.js";
 import ContactPage from "./pages/contactPage.js";
-import { useFetchProducts } from "./functionality/fetch/fetch.js";
+import { CartProvider } from "./functionality/cartContext.js"; 
 
 const App = () => {
-    const { products, loading, error } = useFetchProducts(); 
-
-    console.log("Products in App.js:", products); 
-
     return (
-        <Router>
-            <Header />
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/products/:id" element={<ProductPage />} />
-                <Route path="/cart" element={<CartPage />} />
-                <Route path="/cart-success" element={<CartSuccessPage />} />
-                <Route path="/contact" element={<ContactPage />} />
-            </Routes>
-            <Footer />
-        </Router>
+        <CartProvider> {}
+            <Router>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/products/:id" element={<ProductPage />} />
+                    <Route path="/cart" element={<CartPage />} />
+                    <Route path="/cart-success" element={<CartSuccessPage />} />
+                    <Route path="/contact" element={<ContactPage />} />
+                </Routes>
+                <Footer />
+            </Router>
+        </CartProvider>
     );
 };
 
