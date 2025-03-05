@@ -12,9 +12,9 @@ import {
 
 
 const ProductPage = () => {
-  const { id } = useParams(); // Get product ID from URL
-  const { product, loading, error } = useFetchProductById(id); // Fetch single product
-  const { addToCart } = useContext(CartContext); // Get add to cart function
+  const { id } = useParams();
+  const { product, loading, error } = useFetchProductById(id); 
+  const { addToCart } = useContext(CartContext); 
 
   if (loading) return <p>Loading product...</p>;
   if (error) return <p>Error: {error}</p>;
