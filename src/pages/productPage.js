@@ -22,7 +22,6 @@ const ProductPage = () => {
 
   return (
     <>
-      {/* First Section: Product Overview */}
       <ProductContainer>
         <ProductImage 
           src={product.image?.url || "https://via.placeholder.com/500"} 
@@ -40,7 +39,6 @@ const ProductPage = () => {
         </ProductDetails>
       </ProductContainer>
 
-      {/* Second Section: Product Details with Accordion */}
       <AccordionContainer>
         <Accordion>
           <h3>Product Information</h3>
@@ -56,10 +54,10 @@ const ProductPage = () => {
         </Accordion>
       </AccordionContainer>
 
-      {/* Third Section: Related Products */}
+    
       <ProductCardsSection>
         <h3>Related Products</h3>
-        {/* Add related product logic here */}
+        
       </ProductCardsSection>
     </>
   );
