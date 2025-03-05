@@ -50,6 +50,7 @@ export const SearchBar = styled.input`
    border: 1px solid #ccc;
    background-color: white;
    margin-right: 5rem;
+   margin-top: 2rem;
 `;
 
 export const HeroSection = styled.header`
@@ -85,71 +86,6 @@ export const HeroButton = styled.button`
    transition: background-color 0.3s;
    &:hover {
       background-color: #c2001d;
-   }
-`;
-
-export const ProductContainer = styled.div`
-   display: grid;
-   grid-template-columns: repeat(5, 1fr);
-   gap: 20px;
-   padding: 40px 20px;
-   justify-content: center;
-
-   @media (max-width: 1200px) {
-      grid-template-columns: repeat(3, 1fr);
-   }
-
-   @media (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-   }
-
-   @media (max-width: 480px) {
-      grid-template-columns: repeat(1, 1fr);
-   }
-`;
-
-export const ProductCard = styled.div`
-   background-color: white;
-   padding: 20px;
-   border-radius: 10px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   text-align: center;
-   border: 1px solid #ddd;
-`;
-
-export const ProductTitle = styled.h3`
-   font-size: 20px;
-   font-weight: bold;
-   margin-bottom: 10px;
-`;
-
-export const ProductRating = styled.div`
-   display: flex;
-   justify-content: center;
-   margin-bottom: 10px;
-   .filled {
-      color: #f0a500;
-   }
-   .empty {
-      color: #ccc;
-   }
-`;
-
-export const ProductPrice = styled.p`
-   font-size: 28px;
-   font-weight: bold;
-   margin: 10px 0;
-`;
-
-export const AddToCartButton = styled.button`
-   background-color: #007bff;
-   color: white;
-   padding: 10px 15px;
-   border-radius: 8px;
-   width: 100%;
-   transition: background-color 0.3s;
-   &:hover {
-      background-color: #0056b3;
    }
 `;
 
