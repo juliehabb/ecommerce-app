@@ -58,7 +58,7 @@ export const CartIcon = styled.div`
       font-weight: bold;
       
       &:hover {
-         color: #f0a500;
+         color: #007bff;
       }
 
    }
