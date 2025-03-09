@@ -4,7 +4,7 @@ import { FooterContainer } from "./footer.styles";
 const Footer = () => {
   return (
     <FooterContainer>
-      &copy; {new Date().getFullYear()} SurvivalStore. All rights reserved.
+      &copy; {new Date().getFullYear()} GeneralStore. All rights reserved.
     </FooterContainer>
   );
 };
