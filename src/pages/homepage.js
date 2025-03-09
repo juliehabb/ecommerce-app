@@ -9,6 +9,7 @@ import {
 } from "../styling/general.js";
 
 import { useFetchProducts } from "../functionality/fetch/fetch";
+import heroImage from "../images/pexels-polina-tankilevitch-4440799.jpg"
 
 const HomePage = () => {
   const { products, loading, error } = useFetchProducts();
@@ -25,11 +26,11 @@ const HomePage = () => {
 
   return (
     <>
-      <HeroSection style={{ backgroundImage: "url('https://via.placeholder.com/1920x1080')" }}>
+      <HeroSection style={{ backgroundImage: `url(${heroImage})` }}>
         <HeroOverlay />
         <HeroContent>
-          <h1>Survival & Tactical Gear</h1>
-          <p>Gear Up. Stay Ready. Conquer Anything.</p>
+          <h1>Whatever you need. We have it.</h1>
+          <p>From essentials to indulgences, shop it all in one place—hassle-free, fast, and at the best prices!</p>
           <HeroButton>Buy Now</HeroButton>
         </HeroContent>
       </HeroSection>
