@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ecommerce-app/static/css/main.e6c13ad2.css",
+    "main.js": "/ecommerce-app/static/js/main.62a8c165.js",
+    "static/js/453.ce58f9bb.chunk.js": "/ecommerce-app/static/js/453.ce58f9bb.chunk.js",
+    "static/media/pexels-polina-tankilevitch-4440799.jpg": "/ecommerce-app/static/media/pexels-polina-tankilevitch-4440799.dc1fad95b243f6f81c2f.jpg",
+    "index.html": "/ecommerce-app/index.html",
+    "main.e6c13ad2.css.map": "/ecommerce-app/static/css/main.e6c13ad2.css.map",
+    "main.62a8c165.js.map": "/ecommerce-app/static/js/main.62a8c165.js.map",
+    "453.ce58f9bb.chunk.js.map": "/ecommerce-app/static/js/453.ce58f9bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.62a8c165.js"
+  ]
+}
