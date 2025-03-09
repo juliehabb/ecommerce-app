@@ -18,7 +18,6 @@ const Header = () => {
       <Nav>
         <NavLinks>
           <Link to="/">Home</Link>
-          <Link to="/products">Shop</Link>
           <Link to="/contact">Contact</Link>
         </NavLinks>
         <CartIcon>
