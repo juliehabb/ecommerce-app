@@ -10,14 +10,22 @@ export const HeaderContainer = styled.header`
    display: flex;
    justify-content: space-between;
    align-items: center;
+   background-color: #333; 
+   box-sizing: border-box; 
    z-index: 1000;
+   overflow: hidden; 
 `;
 
 export const Logo = styled.div`
-   img {
-      height: 50px;
-   }
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   transition: color 0.3s;
+      &:hover {
+         color: #007bff;
+      }
 `;
+
 
 export const Nav = styled.nav`
    display: flex;
@@ -34,14 +42,26 @@ export const NavLinks = styled.div`
       font-weight: bold;
       transition: color 0.3s;
       &:hover {
-         color: #f0a500;
+         color: #007bff;
       }
+         
    }
 `;
 
 export const CartIcon = styled.div`
    color: white;
    cursor: pointer;
+
+    a {
+      text-decoration: none; 
+      color: white; 
+      font-weight: bold;
+      
+      &:hover {
+         color: #f0a500;
+      }
+
+   }
 `;
 
 export const SearchBar = styled.input`
