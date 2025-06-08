@@ -93,8 +93,6 @@ export const ProductImage = styled.img`
    border-radius: 10px;
 `;
 
-
-
 export const ProductDetails = styled.div`
    width: 50%;
    display: flex;
@@ -317,7 +315,6 @@ export const CheckoutButton = styled.button`
    }
 `;
 
-
 /* Cart success */
 export const SuccessContainer = styled.div`
    display: flex;
@@ -356,9 +353,7 @@ export const BackToHomeButton = styled.button`
    }
 `;
 
-
 /* Contact */
-
 
 export const ContactContainer = styled.div`
    max-width: 600px;

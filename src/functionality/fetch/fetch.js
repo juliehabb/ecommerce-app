@@ -13,7 +13,6 @@ export const useFetchProducts = () => {
           throw new Error("Failed to fetch data");
         }
         const result = await response.json();
-        console.log("Fetched Data:", result);
 
         if (result && Array.isArray(result.data)) {
           setProducts(result.data); 

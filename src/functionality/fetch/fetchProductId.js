@@ -16,7 +16,6 @@ export const useFetchProductById = (id) => {
           throw new Error("Failed to fetch product");
         }
         const result = await response.json();
-        console.log("Fetched Product Data:", result); // Log API response
         
         if (result && result.data) {
           setProduct(result.data); 
