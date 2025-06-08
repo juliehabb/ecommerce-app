@@ -6,7 +6,7 @@ A fully responsive e-commerce app built with React. Users can browse products, v
 
 ## 🔗 Live Demo
 
-[View the live site](https://juliehabb.github.io/final-exam)
+[View the live site](https://juliehabb.github.io/ecommerce-app)
 
 ---
 
